@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwissPoemGenerator</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
-<div class="container">
-<h1>AI Swiss Poem Generator</h1>
+
+<h1>AI Swiss Poem Generator 🇨🇭</h1>
+<div class="form-container">
 <main>
     <form>
       <input
+      class="instructions"
         type="text"
-        placeholder="Enter the topic of the poem"
+        placeholder="Enter the topic of the poem..."
         autofocus
         required
         autocomplete="off"
       />
-      <input type="submit" />
+      <input type="submit" id="submit-button" value="Generate poem"/>
+      
     </form>
-    <div>
-      Generated poem here
+    <div class="hint">
+i.e. Mountains, Flowers or Cheese
     </div>
   </main>
-
-
-
-
-
 </div>
+<div class="poem-container">
+    Generated poem
+</div>
+
+
+
+
 
 
 
