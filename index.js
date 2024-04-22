@@ -1,7 +1,7 @@
 //page reload
 
 new Typewriter('#poem', {
-    strings: `AI Swiss poem generator...`,
+    strings: `Generating the poem here...`,
     autoStart: true,
     
   });
@@ -14,7 +14,7 @@ function generatePoem(event){
     let instructions=document.querySelector(".instructions");
 
     let apiKey = "do37btb04e66032f8eb1ab0493255777";
-    let context = "You are a Swiss poets and poem expert, please carefully follow the instructions. Sign the poem with the Author's name inside the <strong></strong> element with the id of signature. Since Switzerland has multiple official languages, your can type the poem in English, German, French, Italian or Romansh, according to the original language of the poem";
+    let context = "You are a Swiss poets and poem expert, please carefully follow the instructions. After writing the full poem, please sign the poem with the Author's name inside the <strong></strong> element with the id of signature. Since Switzerland has multiple official languages, your can type the poem in English, German, French, Italian or Romansh, according to the original language of the poem";
     let prompt = `Write a Swiss poem about the topic: ${instructions.value}?`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
